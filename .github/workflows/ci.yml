@@ -1,0 +1,28 @@
+# Continuous Integration: GitHub runs this on every push, so a broken change is caught
+# immediately and a green tick on your repository tells recruiters the project works.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Unit tests
+        run: pytest -q
+      - name: End-to-end smoke test (data -> warehouse -> train -> validate -> monitor)
+        run: python -m mikopo.pipeline
+      - name: Keep the validation report as a build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-report
+          path: reports/
