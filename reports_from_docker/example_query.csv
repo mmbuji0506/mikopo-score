@@ -1,0 +1,13 @@
+employment_type,term_band,applications,default_rate_pct,avg_loan_tzs
+farmer,short,582,32.1,2036667.0
+informal_trader,short,1012,24.9,2193172.0
+farmer,medium,1251,19.2,1996403.0
+self_employed,short,1180,17.6,4008627.0
+salaried,short,1246,16.8,5140273.0
+informal_trader,medium,1933,13.8,2218753.0
+farmer,long,1233,12.4,1915588.0
+self_employed,medium,2380,10.2,3895366.0
+salaried,medium,2394,8.8,5014674.0
+informal_trader,long,1970,8.5,2224132.0
+self_employed,long,2452,6.4,3943768.0
+salaried,long,2367,5.1,5027997.0

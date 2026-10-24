@@ -1,0 +1,10 @@
+rule,severity,violations,status
+duplicate loan_id,critical,0,PASS
+orphan customer_key (fact points to missing customer),critical,0,PASS
+orphan date_key,critical,0,PASS
+non-positive loan amount,critical,0,PASS
+applicant outside age 18-65,critical,0,PASS
+negative income,critical,0,PASS
+dti above 5 (implausible),warning,0,PASS
+more than 5% of income missing,warning,0,PASS
+row count differs from audit log,critical,0,PASS

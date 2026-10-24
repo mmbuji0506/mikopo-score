@@ -1,0 +1,11 @@
+feature,psi,status
+mobile_money_monthly_txn,0.48280620000846314,ACTION
+mobile_money_avg_balance_tzs,0.005224862997038717,stable
+monthly_income_tzs,0.00423221312935543,stable
+months_with_bank,0.0038500722318831177,stable
+dti,0.002472194934365933,stable
+age,0.0011959807774484007,stable
+loan_term_months,0.001021695290929906,stable
+past_delinquencies,0.0008627056378241458,stable
+existing_loans,0.00040630142833179866,stable
+employment_type,0.0003773817547331594,stable
